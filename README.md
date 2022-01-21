@@ -11,6 +11,6 @@ It is integrated with a [coffee order api](https://island-bramble.glitch.me/orde
 * `User` can create a new coffee order 
 * `User` can delete all current coffee orders
 
-##Technologies 
+## Technologies 
 * Hot Coffee App is an iOS application built using [Swift](https://developer.apple.com/swift/) and Storyboard.
 
