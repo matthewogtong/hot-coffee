@@ -7,13 +7,23 @@
 
 import Foundation
 
+enum NetworkError: Error {
+
+    case decodingError
+    case domainError
+    case urlError
+    
+}
+
 struct Resource<T: Codable> {
+    
     let url: URL
+    
 }
 
 class Webservice {
     
-    func load<T>(resource: Resource, completion: @escaping (Result<T, NetworkError>) -> Void) {
+    func load<T>(resource: Resource<T>, completion: @escaping (Result<T, NetworkError>) -> Void) {
         
     }
     
