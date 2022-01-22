@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct Order: Codable {
+    
+    let name: String
+    let coffeeName: String
+    let total: Float
+    let size: String
+    
+}
