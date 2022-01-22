@@ -11,4 +11,10 @@ struct Resource<T: Codable> {
     let url: URL
 }
 
-
+class Webservice {
+    
+    func load<T>(resource: Resource, completion: @escaping (Result<T, NetworkError>) -> Void) {
+        
+    }
+    
+}
