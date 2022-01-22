@@ -7,6 +7,15 @@
 
 import Foundation
 
+enum CoffeeName: String, Codable {
+    
+    case cappuccino
+    case latte
+    case espresso
+    case cortado
+    
+}
+
 enum CoffeeSize: String, Codable {
     
     case small
@@ -18,7 +27,7 @@ enum CoffeeSize: String, Codable {
 struct Order: Codable {
     
     let name: String
-    let coffeeName: String
+    let coffeeName: CoffeeName
     let total: Float
     let size: CoffeeSize
     
