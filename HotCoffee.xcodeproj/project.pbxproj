@@ -14,6 +14,7 @@
 		FE6F755E279B1FCE0057C06B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6F755C279B1FCE0057C06B /* LaunchScreen.storyboard */; };
 		FE6F7568279B4DFF0057C06B /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6F7567279B4DFF0057C06B /* OrdersTableViewController.swift */; };
 		FE6F756A279B4E480057C06B /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6F7569279B4E480057C06B /* AddOrderViewController.swift */; };
+		FE6F756D279C78EA0057C06B /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6F756C279C78EA0057C06B /* Webservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		FE6F7565279B21610057C06B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FE6F7567279B4DFF0057C06B /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
 		FE6F7569279B4E480057C06B /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
+		FE6F756C279C78EA0057C06B /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		FE6F7550279B1FCE0057C06B /* HotCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				FE6F756B279C78D50057C06B /* Services */,
 				FE6F7566279B4C9A0057C06B /* Controllers */,
 				FE6F7551279B1FCE0057C06B /* AppDelegate.swift */,
 				FE6F7553279B1FCE0057C06B /* SceneDelegate.swift */,
@@ -78,6 +81,14 @@
 				FE6F7569279B4E480057C06B /* AddOrderViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FE6F756B279C78D50057C06B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FE6F756C279C78EA0057C06B /* Webservice.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 				FE6F7552279B1FCE0057C06B /* AppDelegate.swift in Sources */,
 				FE6F7554279B1FCE0057C06B /* SceneDelegate.swift in Sources */,
 				FE6F7568279B4DFF0057C06B /* OrdersTableViewController.swift in Sources */,
+				FE6F756D279C78EA0057C06B /* Webservice.swift in Sources */,
 				FE6F756A279B4E480057C06B /* AddOrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
