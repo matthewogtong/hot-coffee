@@ -9,18 +9,19 @@ import Foundation
 
 enum CoffeeName: String, Codable {
     
-    case cappuccino
-    case latte
-    case espresso
-    case cortado
+    case hotCoffee = "Hot Coffee"
+    case cappuccino = "Cappuccino"
+    case latte = "Latte"
+    case espresso = "Espresso"
+    case cortado = "Cortado"
     
 }
 
 enum CoffeeSize: String, Codable {
     
-    case small
-    case medium
-    case large
+    case small = "Small"
+    case medium = "Medium"
+    case large = "Large"
     
 }
 
