@@ -15,5 +15,20 @@ struct OrderViewModel {
 
 extension OrderViewModel {
     
+    var name: String {
+        return self.order.name
+    }
+    
+    var coffeeName: String {
+        return self.order.coffeeName.rawValue
+    }
+    
+    var total: Float {
+        return self.order.total
+    }
+    
+    var size: String {
+        return self.order.size.rawValue
+    }
     
 }
