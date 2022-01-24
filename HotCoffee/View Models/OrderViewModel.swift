@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+struct OrderViewModel {
+    
+    let order: Order
+    
+}
+
+extension OrderViewModel {
+    
+    
+}
