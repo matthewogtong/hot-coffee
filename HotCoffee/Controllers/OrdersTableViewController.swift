@@ -44,6 +44,8 @@ class OrdersTableViewController: UITableViewController {
         return 1
     }
     
-    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.orderListViewModel.ordersViewModel.count
+    }
     
 }
