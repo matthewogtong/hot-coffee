@@ -52,7 +52,7 @@ class OrdersTableViewController: UITableViewController {
         
         let vm = self.orderListViewModel.orderViewModel(at: indexPath.row)
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "OrderTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.reuseableOrderCell, for: indexPath)
         
         cell.textLabel?.text = vm.coffeeName
         

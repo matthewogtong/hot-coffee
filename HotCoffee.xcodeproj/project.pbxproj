@@ -17,6 +17,7 @@
 		FE6F756D279C78EA0057C06B /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6F756C279C78EA0057C06B /* Webservice.swift */; };
 		FE6F7570279CCD960057C06B /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6F756F279CCD960057C06B /* Order.swift */; };
 		FE6F7598279F47DA0057C06B /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6F7597279F47DA0057C06B /* OrderViewModel.swift */; };
+		FE6F759A27A051760057C06B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6F759927A051760057C06B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		FE6F756C279C78EA0057C06B /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		FE6F756F279CCD960057C06B /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		FE6F7597279F47DA0057C06B /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		FE6F759927A051760057C06B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				FE6F7566279B4C9A0057C06B /* Controllers */,
 				FE6F7551279B1FCE0057C06B /* AppDelegate.swift */,
 				FE6F7553279B1FCE0057C06B /* SceneDelegate.swift */,
+				FE6F759927A051760057C06B /* Constants.swift */,
 				FE6F7557279B1FCE0057C06B /* Main.storyboard */,
 				FE6F755A279B1FCE0057C06B /* Assets.xcassets */,
 				FE6F755C279B1FCE0057C06B /* LaunchScreen.storyboard */,
@@ -191,6 +194,7 @@
 				FE6F756D279C78EA0057C06B /* Webservice.swift in Sources */,
 				FE6F7598279F47DA0057C06B /* OrderViewModel.swift in Sources */,
 				FE6F756A279B4E480057C06B /* AddOrderViewController.swift in Sources */,
+				FE6F759A27A051760057C06B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
