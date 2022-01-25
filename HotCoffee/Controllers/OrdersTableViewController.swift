@@ -48,4 +48,18 @@ class OrdersTableViewController: UITableViewController {
         return self.orderListViewModel.ordersViewModel.count
     }
     
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let vm = self.orderListViewModel.orderViewModel(at: indexPath.row)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "OrderTableViewCell", for: indexPath)
+        
+        cell.textLabel?.text = vm.coffeeName
+        
+        cell.detailTextLabel?.text = vm.size
+        
+        return cell
+        
+    }
+    
 }
