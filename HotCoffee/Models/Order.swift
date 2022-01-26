@@ -14,6 +14,7 @@ enum CoffeeName: String, Codable {
     case latte = "Latte"
     case espresso = "Espresso"
     case cortado = "Cortado"
+    case chaiLatter = "Chai Latte"
     
 }
 
