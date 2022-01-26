@@ -12,13 +12,30 @@ class AddOrderViewController: UIViewController {
     
     private var vm = AddCoffeeOrderViewModel()
     
-    @IBOutlet weak var coffeSelectionTableView: UITableView!
+    @IBOutlet weak var coffeeSelectionTableView: UITableView!
+    
+    private var coffeeSizeSegmentedControl: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.coffeSelectionTableView.delegate = self
-        self.coffeSelectionTableView.dataSource = self
+        self.coffeeSelectionTableView.delegate = self
+        self.coffeeSelectionTableView.dataSource = self
+        
+        setupUI()
+        
+    }
+    
+    private func setupUI() {
+        
+        self.coffeeSizeSegmentedControl = UISegmentedControl(items: self.vm.sizes)
+        self.coffeeSizeSegmentedControl.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(self.coffeeSizeSegmentedControl)
+        
+        self.coffeeSizeSegmentedControl.topAnchor.constraint(equalTo: self.coffeeSelectionTableView.bottomAnchor, constant: 20).isActive = true
+        
+        self.coffeeSizeSegmentedControl.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         
     }
     
@@ -42,7 +59,7 @@ extension AddOrderViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = coffeSelectionTableView.dequeueReusableCell(withIdentifier: K.reuseableCoffeeSelectionCell, for: indexPath)
+        let cell = coffeeSelectionTableView.dequeueReusableCell(withIdentifier: K.reuseableCoffeeSelectionCell, for: indexPath)
         
         cell.textLabel?.text = vm.types[indexPath.row]
         
