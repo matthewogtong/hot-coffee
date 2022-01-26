@@ -45,6 +45,10 @@ class AddOrderViewController: UIViewController {
 
 extension AddOrderViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        coffeeSelectionTableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+    }
+    
     
     
 }
