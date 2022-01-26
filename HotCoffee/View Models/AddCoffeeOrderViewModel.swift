@@ -9,7 +9,7 @@ import Foundation
 
 struct AddCoffeeOrderViewModel {
     
-    var name: String
+    var name: String?
     
     var types: [String] {
         return CoffeeName.allCases.map { $0.rawValue }

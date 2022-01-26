@@ -10,6 +10,22 @@ import UIKit
 
 class AddOrderViewController: UIViewController {
     
+    private var vm = AddCoffeeOrderViewModel()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+    }
+    
+}
+
+extension AddOrderViewController: UITableViewDelegate {
+    
+    
+    
+}
+
+extension AddOrderViewController: UITableViewDataSource {
     
 }
