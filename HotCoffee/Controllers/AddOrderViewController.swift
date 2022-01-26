@@ -42,7 +42,7 @@ extension AddOrderViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = coffeSelectionTableView.dequeueReusableCell(withIdentifier: "CoffeeSelectionTableViewCell", for: indexPath)
+        let cell = coffeSelectionTableView.dequeueReusableCell(withIdentifier: K.reuseableCoffeeSelectionCell, for: indexPath)
         
         cell.textLabel?.text = vm.types[indexPath.row]
         

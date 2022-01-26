@@ -10,5 +10,6 @@ import Foundation
 struct K {
     
     static let reuseableOrderCell = "OrderTableViewCell"
+    static let reuseableCoffeeSelectionCell = "CoffeeSelectionTableViewCell"
     
 }
