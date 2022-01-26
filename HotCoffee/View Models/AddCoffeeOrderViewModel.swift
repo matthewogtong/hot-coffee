@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct AddCoffeeOrderViewModel {
+    
+    var name: String
+    
+}
