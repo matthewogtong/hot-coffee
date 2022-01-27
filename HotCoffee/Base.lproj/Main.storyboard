@@ -113,7 +113,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add New Order" id="Aq5-PV-iJB">
                         <barButtonItem key="leftBarButtonItem" title="Close" id="LRE-5Q-btC"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="Lo5-r5-7IU"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="Lo5-r5-7IU">
+                            <connections>
+                                <action selector="save:" destination="WX0-hg-1dF" id="7gj-Xh-gLa"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="coffeeSelectionTableView" destination="qKv-p7-23Q" id="1CB-Ez-L4E"/>

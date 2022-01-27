@@ -41,6 +41,12 @@ class AddOrderViewController: UIViewController {
         
     }
     
+    @IBAction func save(_ sender: UIBarButtonItem) {
+        
+        let name = self.nameTextField.text
+        
+    }
+    
 }
 
 //MARK: - UITableViewDelegate
