@@ -45,6 +45,8 @@ class AddOrderViewController: UIViewController {
         
         let name = self.nameTextField.text
         
+        let selectedSize = self.coffeeSizeSegmentedControl.titleForSegment(at: self.coffeeSizeSegmentedControl.selectedSegmentIndex)
+        
     }
     
 }
