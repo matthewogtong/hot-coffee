@@ -117,6 +117,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="coffeeSelectionTableView" destination="qKv-p7-23Q" id="1CB-Ez-L4E"/>
+                        <outlet property="nameTextField" destination="bg2-5i-5e3" id="6hj-dd-yfx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fSE-Ld-yQC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

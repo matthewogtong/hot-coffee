@@ -14,6 +14,8 @@ class AddOrderViewController: UIViewController {
     
     @IBOutlet weak var coffeeSelectionTableView: UITableView!
     
+    @IBOutlet weak var nameTextField: UITextField!
+    
     private var coffeeSizeSegmentedControl: UISegmentedControl!
     
     override func viewDidLoad() {
