@@ -30,7 +30,26 @@ struct Order: Codable {
     
     let name: String
     let coffeeName: CoffeeName
-    let total: Float
+//    let total: Float
     let size: CoffeeSize
+    
+}
+
+extension Order {
+    
+    init?(_ vm: AddCoffeeOrderViewModel) {
+        
+        guard let name = vm.name,
+              let selectedType = CoffeeName(rawValue: vm.selectedType!),
+              let selectedSize = CoffeeSize(rawValue: vm.selectedSize!)
+        else {
+            return nil
+        }
+        
+        self.name = name
+        self.coffeeName = selectedType
+        self.size = selectedSize
+        
+    }
     
 }

@@ -41,9 +41,9 @@ extension OrderViewModel {
         return self.order.coffeeName.rawValue
     }
     
-    var total: Float {
-        return self.order.total
-    }
+//    var total: Float {
+//        return self.order.total
+//    }
     
     var size: String {
         return self.order.size.rawValue
