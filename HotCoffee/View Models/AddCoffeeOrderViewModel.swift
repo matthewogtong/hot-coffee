@@ -11,6 +11,10 @@ struct AddCoffeeOrderViewModel {
     
     var name: String?
     
+    var selectedType: String?
+    
+    var selectedSize: String?
+    
     var types: [String] {
         return CoffeeName.allCases.map { $0.rawValue }
     }
