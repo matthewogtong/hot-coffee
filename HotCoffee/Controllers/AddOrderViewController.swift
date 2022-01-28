@@ -47,6 +47,13 @@ class AddOrderViewController: UIViewController {
         
         let selectedSize = self.coffeeSizeSegmentedControl.titleForSegment(at: self.coffeeSizeSegmentedControl.selectedSegmentIndex)
         
+        guard let indexPath = self.coffeeSelectionTableView.indexPathForSelectedRow else {
+            fatalError("Error in selecting coffee!")
+        }
+        
+        self.vm.name = name
+        
+        
     }
     
 }
