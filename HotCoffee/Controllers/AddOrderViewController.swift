@@ -52,6 +52,8 @@ class AddOrderViewController: UIViewController {
         }
         
         self.vm.name = name
+        self.vm.selectedSize = selectedSize
+        self.vm.selectedType = self.vm.types[indexPath.row]
         
         
     }
