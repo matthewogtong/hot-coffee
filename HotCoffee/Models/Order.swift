@@ -37,6 +37,14 @@ struct Order: Codable {
 
 extension Order {
     
+    static func create(vm: AddCoffeeOrderViewModel) -> Resource<Order?> {
+        
+    }
+    
+}
+
+extension Order {
+    
     init?(_ vm: AddCoffeeOrderViewModel) {
         
         guard let name = vm.name,
