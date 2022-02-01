@@ -46,8 +46,12 @@ extension Order {
         }
 
         guard let data = try? JSONEncoder().encode(order) else {
-            fatalError("Error encoding")
+            fatalError("Error encoding order!")
         }
+        
+        let resource = Resource<Order>(url: url)
+        
+        return resource
                 
     }
     
