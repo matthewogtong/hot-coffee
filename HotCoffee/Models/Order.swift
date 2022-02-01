@@ -49,7 +49,7 @@ extension Order {
             fatalError("Error encoding order!")
         }
         
-        let resource = Resource<Order>(url: url)
+        let resource = Resource<Order?>(url: url)
         
         return resource
                 
