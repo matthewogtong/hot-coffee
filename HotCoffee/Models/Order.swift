@@ -49,7 +49,10 @@ extension Order {
             fatalError("Error encoding order!")
         }
         
-        let resource = Resource<Order?>(url: url)
+        var resource = Resource<Order?>(url: url)
+        
+        resource.httpMethod = .post
+        resource.body = data
         
         return resource
                 
