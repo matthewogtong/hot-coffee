@@ -45,7 +45,9 @@ extension Order {
             fatalError("URL is incorrect!")
         }
 
-        
+        guard let data = try? JSONEncoder().encode(order) else {
+            fatalError("Error encoding")
+        }
                 
     }
     
