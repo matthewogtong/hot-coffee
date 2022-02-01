@@ -25,6 +25,8 @@ enum HttpMethod: String {
 struct Resource<T: Codable> {
 
     let url: URL
+    var httpMethod: HttpMethod = .get
+    var body: Data? = nil
 
 }
 
