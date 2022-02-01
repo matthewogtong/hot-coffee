@@ -15,6 +15,13 @@ enum NetworkError: Error {
 
 }
 
+enum HttpMethod: String {
+    
+    case get = "GET"
+    case post = "POST"
+    
+}
+
 struct Resource<T: Codable> {
 
     let url: URL
