@@ -34,6 +34,17 @@ class OrdersTableViewController: UITableViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let navC = segue.destination as? UINavigationController,
+              let addCoffeeOrderVC = navC.viewControllers.first as? AddOrderViewController else {
+                  fatalError("Error performing segue!")
+              }
+        
+        addCoffeeOrderVC.delegate = self
+        
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
