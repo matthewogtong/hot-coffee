@@ -19,6 +19,8 @@ class AddOrderViewController: UIViewController {
     
     private var vm = AddCoffeeOrderViewModel()
     
+    var delegate: AddCoffeeOrderDelegate?
+    
     @IBOutlet weak var coffeeSelectionTableView: UITableView!
     
     @IBOutlet weak var nameTextField: UITextField!
