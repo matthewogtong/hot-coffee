@@ -50,6 +50,14 @@ class AddOrderViewController: UIViewController {
         
     }
     
+    @IBAction func close(_ sender: UIBarButtonItem) {
+    
+        if let delegate = self.delegate {
+            delegate.addCoffeeOrderViewControllerDidClose(controller: self)
+        }
+        
+    }
+    
     @IBAction func save(_ sender: UIBarButtonItem) {
         
         let name = self.nameTextField.text
