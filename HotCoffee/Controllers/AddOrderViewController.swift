@@ -68,7 +68,13 @@ class AddOrderViewController: UIViewController {
             
             switch result {
             case .success(let order):
-                print(order)
+                
+                if let order = order, let delegate = self.delegate {
+                    DispatchQueue.main.async {
+                        delegate.addCoffeeOrderViewControllerDidSave(order: order, controller: self)
+                    }
+                }
+                
             case .failure(let error):
                 print(error)
             }
