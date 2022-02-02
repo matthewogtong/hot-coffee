@@ -72,11 +72,19 @@ class OrdersTableViewController: UITableViewController {
 extension OrdersTableViewController: AddCoffeeOrderDelegate {
     
     func addCoffeeOrderViewControllerDidSave(order: Order, controller: UIViewController) {
+        
         controller.dismiss(animated: true, completion: nil)
+        
+        let orderVM = OrderViewModel(order: order)
+        self.orderListViewModel.ordersViewModel.append(orderVM)
+        self.tableView.insertRows(at: [IndexPath.init(row: self.orderListViewModel.ordersViewModel.count - 1, section: 0)], with: .automatic)
+        
     }
     
     func addCoffeeOrderViewControllerDidClose(controller: UIViewController) {
-        <#code#>
+        
+        controller.dismiss(animated: true, completion: nil)
+        
     }
     
 }
