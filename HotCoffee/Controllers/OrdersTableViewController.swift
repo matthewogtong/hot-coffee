@@ -57,3 +57,15 @@ class OrdersTableViewController: UITableViewController {
     }
     
 }
+
+extension OrdersTableViewController: AddCoffeeOrderDelegate {
+    
+    func addCoffeeOrderViewControllerDidSave(order: Order, controller: UIViewController) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
+    func addCoffeeOrderViewControllerDidClose(controller: UIViewController) {
+        <#code#>
+    }
+    
+}
