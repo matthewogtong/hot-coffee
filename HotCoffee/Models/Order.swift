@@ -30,7 +30,7 @@ struct Order: Codable {
     
     let name: String
     let coffeeName: CoffeeName
-//    let total: Float
+    let total: Float
     let size: CoffeeSize
     
 }
@@ -63,7 +63,7 @@ extension Order {
         
         resource.httpMethod = .post
         resource.body = data
-        
+                
         return resource
                 
     }
@@ -83,6 +83,7 @@ extension Order {
         
         self.name = name
         self.coffeeName = selectedType
+        self.total = 3
         self.size = selectedSize
         
     }

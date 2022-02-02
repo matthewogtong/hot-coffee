@@ -82,17 +82,9 @@
                                 </prototypes>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bg2-5i-5e3">
-                                <rect key="frame" x="107" y="650" width="200" height="34"/>
+                                <rect key="frame" x="107" y="684" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="49t-It-E3A"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QoJ-Us-0Bk">
-                                <rect key="frame" x="107" y="692" width="200" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="kjC-NV-sVQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -101,13 +93,11 @@
                         <viewLayoutGuide key="safeArea" id="zGF-69-SZb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zGF-69-SZb" firstAttribute="bottom" secondItem="QoJ-Us-0Bk" secondAttribute="bottom" constant="116" id="0UV-Im-8Sf"/>
                             <constraint firstItem="bg2-5i-5e3" firstAttribute="centerX" secondItem="jHP-0d-M6q" secondAttribute="centerX" id="6Tv-1N-Cju"/>
                             <constraint firstItem="qKv-p7-23Q" firstAttribute="height" secondItem="jHP-0d-M6q" secondAttribute="height" multiplier="0.5" id="7OU-DT-tMe"/>
                             <constraint firstItem="qKv-p7-23Q" firstAttribute="leading" secondItem="zGF-69-SZb" secondAttribute="leading" id="SNI-hT-Ldz"/>
-                            <constraint firstItem="QoJ-Us-0Bk" firstAttribute="top" secondItem="bg2-5i-5e3" secondAttribute="bottom" constant="8" symbolic="YES" id="X02-tj-FEP"/>
-                            <constraint firstItem="QoJ-Us-0Bk" firstAttribute="centerX" secondItem="jHP-0d-M6q" secondAttribute="centerX" id="bsg-Qg-XhT"/>
                             <constraint firstItem="qKv-p7-23Q" firstAttribute="top" secondItem="zGF-69-SZb" secondAttribute="top" id="fvt-iZ-0yE"/>
+                            <constraint firstItem="zGF-69-SZb" firstAttribute="bottom" secondItem="bg2-5i-5e3" secondAttribute="bottom" constant="124" id="sUE-fL-ql3"/>
                             <constraint firstItem="qKv-p7-23Q" firstAttribute="width" secondItem="jHP-0d-M6q" secondAttribute="width" id="u56-ZG-4vr"/>
                         </constraints>
                     </view>
