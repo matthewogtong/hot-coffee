@@ -37,6 +37,16 @@ struct Order: Codable {
 
 extension Order {
     
+    static var all: Resource<[Order]> = {
+        
+        guard let url = URL(string: "https://island-bramble.glitch.me/orders") else {
+            fatalError("URL is incorrect!")
+        }
+        
+        return Resource<[Order]>(url: url)
+        
+    }()
+    
     static func create(vm: AddCoffeeOrderViewModel) -> Resource<Order?> {
         
         let order = Order(vm)
