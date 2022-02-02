@@ -8,6 +8,13 @@
 import Foundation
 import UIKit
 
+protocol AddCoffeeOrderDelegate {
+    
+    func addCoffeeOrderViewControllerDidSave(order: Order, controller: UIViewController)
+    func addCoffeeOrderViewControllerDidClose(controller: UIViewController)
+    
+}
+
 class AddOrderViewController: UIViewController {
     
     private var vm = AddCoffeeOrderViewModel()
